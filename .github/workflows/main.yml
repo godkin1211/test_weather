@@ -36,5 +36,5 @@ jobs:
           subject: Taoyuan Weather (${{env.REPORT_DATE}})
           body: file://result.html
           to: nostalgie.chiu@genebook.com.tw
-          fom: GitHub Actions
+          from: GitHub Actions
           content_type: text/html
