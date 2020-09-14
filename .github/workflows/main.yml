@@ -31,10 +31,10 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 465
-          username: ${{ secrets.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
+          username: ${{secrets.MAIL_USERNAME}}
+          password: ${{secrets.MAIL_PASSWORD}}
           subject: Taoyuan Weather (${{env.REPORT_DATE}})
           body: file://result.html
-          to: nostalgie.chiu@genebook.com.tw
+          to: jiajyun.ciou@gmail.com
           from: GitHub Actions
           content_type: text/html
