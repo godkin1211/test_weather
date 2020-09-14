@@ -31,7 +31,7 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 587
-          userame: ${{ secrets.MAIL_USERNAME }}
+          username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: Taoyuan Weather (${{env.REPORT_DATE}})
           body: file://result.html
