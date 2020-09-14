@@ -26,8 +26,8 @@ jobs:
         run: bash ./getWeather.sh
       - name: Get Date
         run: echo "::set-env name=REPORT_DATE::$(TZ=':Asia/Taoyuan' date '+%Y-%m-%d %T')"
-      - name: Send Mail
-        uses: dawidd6/action-send-mail@master
+      - name: Send mail
+        uses: dawidd6/action-send-mail@v2
         with:
           server_address: smtp.gmail.com
           server_port: 465
